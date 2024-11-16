@@ -155,7 +155,8 @@ Page({
       wx.reLaunch({
         url: '/pages/index/index'
       })
-    }).catch(() => {
+    }).catch(error => {
+      console.error(error);
       wx.showToast({
         title: '网络可能出错啦',
         icon: 'none'

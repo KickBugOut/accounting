@@ -9,7 +9,7 @@
     "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "navigationBarTitleText": "言己账本",
+    "navigationBarTitleText": "个人财务管理@TIBET",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

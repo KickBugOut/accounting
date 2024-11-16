@@ -48,7 +48,9 @@ Component({
         endTime,
         isNeedDetails: true
       }).then(res => {
+        console.log("load ok\n")
         const { list } = res.result
+        console.info(list)
         this.setData({
           list,
           isNetworkError: false

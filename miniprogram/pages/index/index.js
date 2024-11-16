@@ -59,11 +59,12 @@ Page({
         income,
         isNetworkError: false
       })
-    }).catch(() => {
-      toast('收入与支出加载失败')
+    }).catch(error => {
+      console.error(error);
+      toast('收入与支出加载失败');
       this.setData({
         isNetworkError: true
-      })
+      });
     }).finally(() => {
       this.setData({
         isReloading: false

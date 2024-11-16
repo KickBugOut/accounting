@@ -1,5 +1,5 @@
 // 云函数入口文件
-const cloud = require('wx-server-sdk')
+const cloud = require('../delete/node_modules/wx-server-sdk')
 
 cloud.init({
   env: cloud.DYNAMIC_CURRENT_ENV
@@ -29,6 +29,8 @@ exports.main = async event => {
     .group({
       _id: '$time',  // 根据 time 字段分组
       data: isNeedDetails ? $.push({
+        _openid:'$_openid',
+        id:'$_id',
         account: '$account',
         money: '$money',
         type: '$type',
